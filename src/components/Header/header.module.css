@@ -1,0 +1,16 @@
+.background-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.avatarImg {
+    width: 300px;
+    height: 300px;
+}
