@@ -4,11 +4,11 @@ import Résumé from '../components/Résumé/Résumé';
 import Skills from '../components/Skills/Skills';
 
 const Home = () => (
-    <React.Fragment>
+    <div>
         <Header />
         <Résumé />
         <Skills />
-    </React.Fragment>
+    </div>
 );
 
 export default Home;

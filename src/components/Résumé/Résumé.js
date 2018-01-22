@@ -30,7 +30,7 @@ const Résumé = () => (
         </p>
         <p>
             Voilà maintenant <strong>{yearSince('2013-07-01')} ans</strong> que je fait du front,
-            dont <strong>{yearSince('2016-12-01')} ans</strong> sur React uniquement.
+            dont <strong>{yearSince('2015-12-01')} ans</strong> sur React uniquement.
         </p>
         <p>
             Auteur de <a href="https://github.com/Evaneos/vitaminjs">vitaminjs</a>
