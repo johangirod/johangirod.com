@@ -1,0 +1,45 @@
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+h2::before {
+  color: gray;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 40px;
+  content: "܀ ܀ ܀";
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: 15px;
+  max-width: 250px;
+  width: 100%;
+  padding: 38px 20px 20px;
+}
+
+.card h3 {
+  text-align: center;
+  margin: 0 0 10px;
+}
+.card ul {
+  margin: 20px 0;
+  text-align: center;
+}
+.card li {
+  display: inline;
+  list-style: none;
+}
+
+.card li:not(:last-child)::after {
+  content: " ~ ";
+  color: lightgray;
+}
