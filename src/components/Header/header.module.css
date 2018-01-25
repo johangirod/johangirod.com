@@ -1,16 +1,49 @@
-.background-img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+:root {
+  --avatar-size: 200px;
+  --header-size: 230px;
+  --social-icon-margin: 24px;
+  --social-icon-size: 42px;
 }
 
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
 }
 
-.avatarImg {
-    width: 300px;
-    height: 300px;
+.social-icons {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: var(--social-icon-margin);
+  z-index: 1;
+}
+.social-icons > div {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons a {
+  width: var(--social-icon-size) !important;
+  height: var(--social-icon-size) !important;
+  box-shadow: none;
+}
+
+.background-img {
+  margin: 0;
+  background: url("./images/northern_lights.jpg");
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  max-height: 50vh;
+  height: var(--header-size);
+}
+
+.avatar-img {
+  border: 4px solid white;
+  position: relative;
+  height: var(--avatar-size);
+  width: var(--avatar-size);
+  top: calc(var(--avatar-size) * -1/2);
+  border-radius: 100%;
 }
