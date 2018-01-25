@@ -12,14 +12,13 @@ const Résumé = () => (
             <strong>Ingénieur</strong> de formation, je me suis spécialisé sur les{' '}
             <strong>technologies Front-end</strong>. Le dynamisme, l'innovation et le foisonnement
             d’expérimentations que l'on trouve dans l’écosystème front est rentré en résonance avec
-            ma propre <strong>soif de découverte</strong>
-            et ma quête de nouveaux horizons.
+            ma propre <strong>soif de découverte</strong> et ma quête de nouveaux horizons.
         </p>
 
         <p>
             Parlez moi de <strong>programmation fonctionnelle</strong>, de typage statique, de
             progressive app, de state management ou de <strong>lean UX</strong> et je peux continuer
-            pendant des heures (surtout avec une bière à la main).
+            pendant des heures (surtout une bière à la main).
         </p>
         <p>
             Une grosse affinité pour le <strong>produit</strong>. J’aime comprendre pourquoi je fait
