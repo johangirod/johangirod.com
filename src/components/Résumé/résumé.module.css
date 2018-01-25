@@ -1,3 +1,5 @@
 .resume {
   padding: 12px;
+  max-width: 600px;
+  margin: auto;
 }

@@ -5,6 +5,8 @@
   --social-icon-size: 42px;
   --background-blur: 0px;
 }
+@media (min-width: ) {
+}
 
 .container {
   display: flex;
@@ -23,7 +25,7 @@
 }
 .social-icons > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .social-icons a {
   width: var(--social-icon-size) !important;
