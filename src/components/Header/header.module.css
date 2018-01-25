@@ -5,8 +5,6 @@
   --social-icon-size: 42px;
   --background-blur: 0px;
 }
-@media (min-width: ) {
-}
 
 .container {
   display: flex;
@@ -30,8 +28,13 @@
 .social-icons a {
   width: var(--social-icon-size) !important;
   height: var(--social-icon-size) !important;
+  margin-right: var(--social-icon-margin);
   box-shadow: none;
 }
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
 .social-icons a:hover :global .social-svg-mask {
   fill: #fffdfb !important;
 }
@@ -41,16 +44,16 @@
   background: url("./images/northern_lights.jpg");
   filter: blur(var(--background-blur));
   margin: calc(var(--background-blur) * -2);
+  background-position-y: 50%;
   width: calc(100% + 4*var(--background-blur));
   position: relative;
   background-size: cover;
-  max-height: 50vh;
   height: var(--header-size);
   margin-bottom: calc(var(--avatar-size) * -1/2);
 }
 
 .avatar-img {
-  border: 6px solid #fffdfb;
+  border: 6px solid rgba(255, 253, 251, 0.1);
   height: var(--avatar-size);
   width: var(--avatar-size);
   z-index: 1;
@@ -74,4 +77,23 @@ h1 small::after {
   color: #0881a3;
   margin-top: 20px;
   display: block;
+}
+
+@media (min-width: 1023px) {
+  .background-img {
+    height: calc(1.2 * var(--header-size));
+    margin-bottom: calc(
+      - var(--avatar-size) / 2 - var(--header-size) * 1.2 / 2
+    );
+  }
+  h1 {
+    margin-top: 60px !important;
+  }
+}
+@media (min-width: 1023px) {
+  .social-icons {
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
 }

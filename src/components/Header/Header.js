@@ -5,20 +5,21 @@ import s from './header.module.css';
 
 const Header = () => (
     <header className={s.container}>
-        <div className={s['social-icons']}>
-            <SocialIcons
-                color="rgba(255,255,255,0.8)"
-                urls={[
-                    'https://github.com/johangirod',
-                    'https://linkedin.com/in/johangirod',
-                    'https://twitter.com/ganceab_',
-                    'https://codepen.io/ganceab',
-                    'mailto:hi@johangirod.com',
-                ]}
-                className={s['social-icon']}
-            />
+        <div className={s['background-img']}>
+            <div className={s['social-icons']}>
+                <SocialIcons
+                    color="rgba(255,255,255,0.8)"
+                    urls={[
+                        'https://github.com/johangirod',
+                        'https://linkedin.com/in/johangirod',
+                        'https://twitter.com/ganceab_',
+                        'https://codepen.io/ganceab',
+                        'mailto:hi@johangirod.com',
+                    ]}
+                    className={s['social-icon']}
+                />
+            </div>
         </div>
-        <div className={s['background-img']} />
         <img
             title="Avatar image"
             alt="Moi, Johan Girod, dans un bateau en Irlande avec une veste de pluie"
