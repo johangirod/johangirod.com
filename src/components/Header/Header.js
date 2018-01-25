@@ -7,7 +7,7 @@ const Header = () => (
     <header className={s.container}>
         <div className={s['social-icons']}>
             <SocialIcons
-                color="rgba(0,0,0,0.8)"
+                color="rgba(255,255,255,0.8)"
                 urls={[
                     'https://github.com/johangirod',
                     'https://linkedin.com/in/johangirod',

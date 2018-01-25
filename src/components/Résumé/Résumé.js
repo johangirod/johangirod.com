@@ -1,4 +1,5 @@
 import React from 'react';
+import s from './résumé.module.css';
 
 const yearSince = (dateString) => {
     const diffAsDate = new Date(Date.now() - new Date(dateString));
@@ -6,12 +7,12 @@ const yearSince = (dateString) => {
 };
 
 const Résumé = () => (
-    <section>
+    <section className={s.resume}>
         <p>
             <strong>Ingénieur</strong> de formation, je me suis spécialisé sur les{' '}
-            <strong>technologies Front-end</strong>. Le dynamisme, le foisonnement d’expérimentation
-            et la quantité d’innovation que l’on peut trouver dans l’écosystème front est entré en
-            résonance avec ma propre <strong>soif de découverte</strong>
+            <strong>technologies Front-end</strong>. Le dynamisme, l'innovation et le foisonnement
+            d’expérimentations que l'on trouve dans l’écosystème front est rentré en résonance avec
+            ma propre <strong>soif de découverte</strong>
             et ma quête de nouveaux horizons.
         </p>
 
@@ -36,7 +37,7 @@ const Résumé = () => (
             Auteur de <a href="https://github.com/Evaneos/vitaminjs">vitaminjs</a>
         </p>
         <p>
-            Je suis aussi passioné de <a href="https://vagalam.bike"> voyage à vélo </a>
+            Je suis aussi un grand passioné de <a href="https://vagalam.bike"> voyage à vélo </a>
         </p>
     </section>
 );
