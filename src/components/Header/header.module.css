@@ -3,6 +3,7 @@
   --header-size: 230px;
   --social-icon-margin: 24px;
   --social-icon-size: 42px;
+  --background-blur: 5px;
 }
 
 .container {
@@ -32,7 +33,9 @@
 .background-img {
   margin: 0;
   background: url("./images/northern_lights.jpg");
-  width: 100%;
+  filter: blur(var(--background-blur));
+  margin: calc(var(--background-blur) * -2);
+  width: calc(100% + 4*var(--background-blur));
   position: relative;
   background-size: cover;
   max-height: 50vh;
