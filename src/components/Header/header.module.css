@@ -41,7 +41,7 @@
 
 .background-img {
   margin: 0;
-  background: url("./images/northern_lights.jpg");
+  background: url("./images/northern_lights.jpeg");
   filter: blur(var(--background-blur));
   margin: calc(var(--background-blur) * -2);
   background-position-y: 50%;
