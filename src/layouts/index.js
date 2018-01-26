@@ -10,11 +10,19 @@ const TemplateWrapper = ({ children }) => (
             <meta
                 name="description"
                 content="Ingénieur de formation, je me suis spécialisé sur les
-            technologies Front-end. Expert en Javascript, React, HTTP ou encore Webpack."
+            technologies Front-end. Expert en Javascript, React, HTTP,  Webpack..."
             />
             <meta
                 name="keywords"
                 content="react, freelance, expert, front-end, johan girod, development"
+            />
+            <meta property="og:title" content="Johan Girod" />
+            <meta property="og:type" content="profile" />
+            <meta property="og:url" content="https://johangirod.com/" />
+            <meta property="og:image" content={avatarUrl} />
+            <meta
+                property="og:description"
+                content="Expert React et technologies Front-end. Compétences, contact, liens, experiences."
             />
             <script type="application/ld+json">
                 {`
