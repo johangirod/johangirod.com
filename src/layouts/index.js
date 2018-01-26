@@ -29,10 +29,9 @@ const TemplateWrapper = ({ children }) => (
             {
                 "@context": "http://schema.org",
                 "@type": "Person",
-                "@language": "fr-FR",
                 "gender": "male",
                 "nationality": "French",
-                "alumniOf": "Evaneos",
+                "alumniOf": "Ensimag",
                 "height": "181 cm",
                 "url": "https://johangirod.com",
                 "name": "Johan Girod",
