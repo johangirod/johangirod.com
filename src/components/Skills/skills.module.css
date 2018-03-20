@@ -1,75 +1,61 @@
 :root {
-  --card-image-size: 80px;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 0;
-}
-h2::before {
-  color: #0881a3;
-  font-weight: normal;
-  display: block;
-  margin-bottom: 40px;
-  content: "܀ ܀ ܀";
+    --card-image-size: 80px;
 }
 
 .card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: stretch;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .card {
-  box-shadow: 0 1px 3px rgba(8, 129, 163, 0.12),
-    0 1px 2px rgba(8, 129, 163, 0.24);
-  border-radius: 10px;
-  margin: 30px 15px;
-  margin-top: 60px;
-  max-width: 250px;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  border: calc(var(--card-image-size)/30) solid #0881a3;
+    box-shadow: 0 1px 3px rgba(8, 129, 163, 0.12), 0 1px 2px rgba(8, 129, 163, 0.24);
+    border-radius: 10px;
+    margin: 30px 15px;
+    margin-top: 60px;
+    max-width: 250px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    border: calc(var(--card-image-size)/30) solid #0881a3;
 
-  padding: 0px 20px 20px;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 0px 20px 20px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .card:hover {
-  box-shadow: 0 14px 28px rgba(8, 129, 163, 0.25),
-    0 10px 10px rgba(8, 129, 163, 0.22);
+    box-shadow: 0 14px 28px rgba(8, 129, 163, 0.25), 0 10px 10px rgba(8, 129, 163, 0.22);
 }
 
 .card img {
-  width: var(--card-image-size);
-  height: var(--card-image-size);
-  background-color: #fffdfb;
-  margin-top: calc(var(--card-image-size) * -1/2);
-  margin-bottom: 10px;
-  padding-top: calc(var(--card-image-size) / 8);
-  border: calc(var(--card-image-size)/30) solid #0881a3;
-  border-radius: 100%;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: var(--card-image-size);
+    height: var(--card-image-size);
+    background-color: #fffdfb;
+    margin-top: calc(var(--card-image-size) * -1/2);
+    margin-bottom: 10px;
+    padding-top: calc(var(--card-image-size) / 8);
+    border: calc(var(--card-image-size)/30) solid #0881a3;
+    border-radius: 100%;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .card:hover img {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .card h3 {
-  margin: 0 0 10px;
+    margin: 0 0 10px;
 }
 .card ul {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 .card li {
-  display: inline;
-  list-style: none;
+    display: inline;
+    list-style: none;
 }
 
 .card li:not(:last-child)::after {
-  content: " ~ ";
-  color: #ffd6a4;
+    content: ' ~ ';
+    color: #ffd6a4;
 }

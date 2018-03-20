@@ -28,9 +28,9 @@ const Skills = () => (
                 iconUrl={starCool}
             />
             <SkillCard
-                title="Prochain talents"
+                title="Prochains talents"
                 iconUrl={starNerd}
-                skillList={['Elm', 'Rust', 'Web assembly', 'CycleJS', 'ReactiveX']}
+                skillList={['Rust', 'Web assembly', 'ReactiveX', 'CycleJS', 'Reason', 'Elm']}
             />
         </div>
     </section>

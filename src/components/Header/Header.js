@@ -20,12 +20,7 @@ const Header = () => (
                 />
             </div>
         </div>
-        <img
-            title="Avatar image"
-            alt="Moi, Johan Girod, dans un bateau en Irlande avec une veste de pluie"
-            src={avatarImg}
-            className={s['avatar-img']}
-        />
+        <img title="Avatar image" alt="Moi" src={avatarImg} className={s['avatar-img']} />
         <h1>
             Johan Girod <br />
             <small>Expert React et technologies Front-end</small>
